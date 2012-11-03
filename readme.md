@@ -19,3 +19,42 @@ var $imgContainer = $('.imgContainer'),
 //2) default image
 
 $imgContainer.imgLoader( desiredImg, defaultImg );
+
+Styling your image pre-loader
+-----------------------------
+
+The image preloader is optional, however if you wish to use it you are provided with the following HTML structure:
+
+<div class="imgContainer">
+
+    <div class="loadOverlay">
+        <div class="loadOverlayContent">
+            <div class="loadAnimate"></div>
+        </div>
+    </div>
+
+</div>
+
+CSS
+---
+
+(obviously modify as suits you, this css is not added by the plugin, it's merely a reference)
+
+.loadOverlay {
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.loadOverlayContent {
+    padding-top: 83px;
+}
+
+.loadAnimate {
+    background-image: url("spinny-loading-gif.gif");
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
