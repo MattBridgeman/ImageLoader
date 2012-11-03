@@ -11,11 +11,15 @@ How To Use
 ----------
 
 var $imgContainer = $('.imgContainer'),
+
     desiredImg = 'http://www.desired.img.com/img.png',
+
     defaultImg = 'http://www.default.img.com/img.jpg';
 
 //pass in two variables to the image loader
+
 //1) desired image
+
 //2) default image
 
 $imgContainer.imgLoader( desiredImg, defaultImg );
